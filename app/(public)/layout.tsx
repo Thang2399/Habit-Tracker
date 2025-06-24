@@ -2,11 +2,8 @@ import React from "react";
 
 export default async function PublicLayout({children}: {children: React.ReactNode}) {
     return (
-        <div>
-            Public Layout
-            <div>
-                {children}
-            </div>
+        <div className={'max-w-7xl mx-auto max-h-8xl h-full flex items-center justify-center text-primary'}>
+            {children}
         </div>
     )
 }
